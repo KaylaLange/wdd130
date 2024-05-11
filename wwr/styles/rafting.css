@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poller+One&display=swap');
+
+:root {
+    --primary-color: #025959;
+    --secondary-color: #038C7F;
+    --accent1-color: #F2EDDF;
+    --accent2-color: #F27D72;
+
+    --heading-font: 'bakbak one', sans-serif;
+    --paragraph-font: 'raleway', sans-serif;
+
+    --nav-background-color: #025959;
+    --nav-link-color: #F2EDDF;
+    --nav-hover-link-color: #F2EDDF;
+    --nav-hover-background-color: #038C7F;
+}
+
+* {
+    max-width: 100%; 
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    color: #393939;
+    max-width: 960px;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 31%;
+    font-family: var(--heading-font);
+    color: var(--accent1-color)
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    max-width: 960px;
+    padding: 0;   
+}
+
+p {
+    color: #393939;
+}
+
+.hero {
+    /*display: block;*/
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#happy {
+    position: absolute;
+    float: right;
+    left: 640px;
+    top:  40%;
+    width: 200px
+}
+
+.hero p {
+    position: absolute;
+    color: #F2EDDF;
+    float: left;
+    width: 500px;
+    height: auto;
+    top: 40%;
+    padding: 2px;
+    right: 320px;
+}
+
+/*article {
+    background-color: black;
+}*/
+
+/*article {
+    height: auto;
+    padding: 2px;
+    position: absolute;
+    top: 500px;
+}*/
+
+.sociallinks {
+    width: 10%;
+    height: auto;
+    margin: 0 5px;
+    float: left;
+    text-decoration: none;
+}
+
+/*.sociallinks {
+    width: 55px;
+    height: auto;
+    margin: 0 5px;
+    float: left;
+}*/
