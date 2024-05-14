@@ -23,6 +23,7 @@ nav a {
 
 h1 {
     color: steelblue;
+    padding-bottom: .5rem;
     border-bottom: 1px solid steelblue;
 }
 
@@ -67,12 +68,17 @@ header, .grid, footer {
    margin: 0 auto;
 }
 
+footer {
+    position: relative;
+    text-align: center;
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
-    background-color: floralwhite;
+    background-color: lightgray;
     color: darkslategrey;
 }
 
