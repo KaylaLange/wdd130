@@ -2,24 +2,58 @@
 
 :root {
     --primary-color: #025959;
-    --secondary-color: #038C7F;
+    --secondary-color: #393939;
     --accent1-color: #F2EDDF;
     --accent2-color: #F27D72;
 
     --heading-font: 'bakbak one', sans-serif;
     --paragraph-font: 'raleway', sans-serif;
 
-    --nav-background-color: #025959;
-    --nav-link-color: #F2EDDF;
+    --nav-background-color: #f2eddf;
+    --nav-link-color: #025959;
     --nav-hover-link-color: #F2EDDF;
     --nav-hover-background-color: #038C7F;
 }
 
-* {
-    max-width: 100%; 
-    margin: 10px;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 29%;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    max-width: 940px;
+    grid-template-rows: 170px auto;
+    background-color: var(--nav-background-color);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: var(--nav-link-color);
+}
+
+.navigation a:hover {
+    color: var(--accent2-color)
+}
+
+.logo {
+    margin: 0 0.25rem 0 4rem;
+    width: 150px;
+    height: auto;
 }
 
 body {
@@ -38,6 +72,77 @@ h1 {
     color: var(--accent1-color)
 }
 
+.hero {
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+    padding: 10px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.happy-block-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 93.8%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    padding: 20px;
+    margin-top: 18%;
+    margin-left: 10px;
+}
+
+.happy-block-overlay img{
+    position: absolute;
+    float: right;
+    padding-left: 10px;
+    width: 200px;
+    height: auto;
+    left: 625px;
+    top: 6.5%;
+    width: 200px
+}
+
+.happy-block-overlay p {
+    position: absolute;
+    color: #F2EDDF;
+    float: left;
+    width: 500px;
+    height: auto;
+    top: 40%;
+    padding: 2px;
+    right: 330px;
+}
+
+.history-text {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.history img {
+    width: auto;
+    height: 160px;
+    margin: 10px;
+}
+
+.history p {
+    margin: 10px;
+}
+
 h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -49,58 +154,62 @@ p {
     color: #393939;
 }
 
-.hero {
-    /*display: block;*/
-    position: relative;
+.adventure {
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
 }
 
-.hero img {
+.adventure h2 {
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+figure {
+    width: 150px;
+}
+
+figure img {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
+    aspect-ratio: 10 / 9;
 }
 
-#happy {
-    position: absolute;
-    float: right;
-    left: 640px;
-    top:  40%;
-    width: 200px
+figcaption {
+    display: block;
+    font: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-size: .75rem;
+    white-space: nowrap;
+    margin-top: 5px;
 }
 
-.hero p {
-    position: absolute;
-    color: #F2EDDF;
-    float: left;
-    width: 500px;
-    height: auto;
-    top: 40%;
-    padding: 2px;
-    right: 320px;
+footer {
+    display: flex;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+    margin-top: 35px;
 }
-
-/*article {
-    background-color: black;
-}*/
-
-/*article {
-    height: auto;
-    padding: 2px;
-    position: absolute;
-    top: 500px;
-}*/
 
 .sociallinks {
-    width: 10%;
-    height: auto;
-    margin: 0 5px;
-    float: left;
-    text-decoration: none;
+    display: flex;
+    margin-left: auto;
 }
 
-/*.sociallinks {
-    width: 55px;
+.sociallinks a {
+    margin-left: 10px;
+    width: 50px;
     height: auto;
-    margin: 0 5px;
-    float: left;
-}*/
+    text-decoration: none;
+}

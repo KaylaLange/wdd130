@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+    <div class="container">
     <header>
-        <img src="images/logo.png" alt="Rafting Site Logo">
-        <nav>
+        <img src="images/logo-copy.png" alt="Rafting Site Logo" class="logo">
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -22,22 +23,41 @@
         <div class="hero">
             <img src="images/hero-image.png" alt="Floating Down the River">
             <h1>Rocky Mountain Rafting</h1>
-            <article>
-                <img id=happy src="images/happy-client.png" alt="Happy Client Rafting">
+            <article class="happy-block-overlay">
+                <img class="happy" src="images/happy-client.png" alt="Happy Client Rafting">
                 <p>Company Mission/Motto Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
         </div>
-        <section>
-            <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione eligendi vitae, odio dolores aperiam accusantium error, maxime, ea ipsam veritatis quas. Fuga odit earum delectus reprehenderit quaerat voluptatem eveniet!</p>
+        <h2 class="history-text">History</h2>
+        <section class="history">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione eligendi vitae, odio dolores aperiam accusantium error, maxime, ea ipsam veritatis quas. Fuga odit earum delectus reprehenderit quaerat voluptatem eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia.</p>
+            <img src="images/tree-lined-river.jpg" alt="Tree Lined River">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione eligendi vitae, odio dolores aperiam accusantium error, maxime, ea ipsam veritatis quas. Fuga odit earum delectus reprehenderit quaerat voluptatem eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia.</p>
         </section>
-        <section>
+        <section class="adventure">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/around-the-bend.jpg" alt="Coming Around the Bend">
-            <img src="images/rafters.jpg" alt="Group of Happy Rafters">
-            <img src="images/rapids.jpg" alt="Rafters on Rapids">
-            <img src="images/river.jpg" alt="Treelined River">
-            <img src="images/splash.jpg" alt="Rafters Getting Splashed">
+            <div class="image-grid">
+                <figure>
+                    <img src="images/around-the-bend.jpg" alt="Coming Around the Bend">
+                    <figcaption>Washing Machine Rapid</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafters.jpg" alt="Group of Happy Rafters">
+                    <figcaption>Warm Springs Rapid</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rapids.jpg" alt="Rafters on Rapids">
+                    <figcaption>Mad Dog Rapid</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/river.jpg" alt="Treelined River">
+                    <figcaption>Screaming Monkey Rapid</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/splash.jpg" alt="Rafters Getting Splashed">
+                    <figcaption>Pleasure Cruise Rapid</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
@@ -54,5 +74,6 @@
             </a>
         </nav>
     </footer>
+    </div>
 </body>
 </html>
