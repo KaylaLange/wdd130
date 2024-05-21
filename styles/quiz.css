@@ -77,17 +77,14 @@ button:hover {
 
 footer {
     width: 500px;
-    margin: 0 auto;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
-    margin: 1rem auto 0;
+    margin: .75rem auto 0;
     font-size: 0.8em;
     color: #777;
-    border-top: 1px solid #ccc;
 }
 
 .form-item {
         display: grid;
-        align-items: center;
         width: 500px;
 }
