@@ -214,6 +214,17 @@ footer {
     text-decoration: none;
 }
 
+ .wireframe {
+    display: flex;
+}
+
+.wireframe img {
+    padding-left: 22rem;
+    width: auto;
+    height: 50px;
+    text-decoration: none;
+}
+
 form {
     width: 650px;
     margin: 0 auto;
