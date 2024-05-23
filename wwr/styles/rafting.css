@@ -123,7 +123,7 @@ h1 {
 .history-text {
     display: block;
     text-align: center;
-    padding: 0;
+    padding: 1rem;
     margin-bottom: 0;
 }
 
@@ -162,10 +162,9 @@ p {
 
 .adventure h2 {
     display: block;
-    padding: 0;
+    padding-bottom: 1rem;
     margin-bottom: 0;
 }
-
 
 .image-grid {
     display: grid;
@@ -193,6 +192,7 @@ figcaption {
     font-size: .75rem;
     white-space: nowrap;
     margin-top: 5px;
+    text-align: center;
 }
 
 footer {
@@ -212,4 +212,101 @@ footer {
     width: 50px;
     height: auto;
     text-decoration: none;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border: 1px solid lightslategray;
+    border-radius: 0.5rem;
+    background-color:#eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid lightslategray;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+
+label, input, button, textarea {
+    font-family: 'raleway', sans-serif;
+}
+
+label {
+    text-align: left;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    vertical-align: middle;
+}
+
+button[type='submit'] {
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.submit-button:hover {
+    background-color: var(--accent2-color);
+}
+
+input[type='text'] {
+    margin-left: 1rem;
+}
+
+input[type='email'] {
+    margin-left: 3.2rem;
+}
+
+h3 {
+    border-bottom: 1px solid var(--secondary-color);
+    padding-top: .5rem;
+}
+
+.help {
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.employee h2 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.map {
+    width: 100%;
+    padding-bottom: 66.66%;
+    position: relative;
+}
+
+.map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

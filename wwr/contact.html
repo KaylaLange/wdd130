@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayla Lange WDD 130 Rocky Mountain Rafting Website Contact Us</title><meta name="description" content="Kayla Lange WDD 130 Rocky Mountain Rafting Website Contact Us">
+    <meta name="author" content="Kayla Lange">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <img src="images/logo-copy.png" alt="Rafting Site Logo" class="logo">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="help">How can we help?</h2>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <p>What is the purpose of your inquiry?</p>
+                    <input type="radio" id="purpose_gi" name="purpose" value="generalinquiry">
+                    <label for="purpose_gi">General Inquiry</label>
+                    <input type="radio" id="purpose_rq" name="purpose" value="reservatoinrequest">
+                    <label for="purpose_rq">Reservation Request</label>
+                    <input type="radio" id="purpose_ws" name="purpose" value="websitesuggestion">
+                    <label for="purpose_ws">Website Suggestion</label>
+                </div>
+                <label class="feedback" for="feedback">Message:</label>    
+                <textarea id="feedback" name="feedback" rows="4" placeholder="I would like to make a reservation..."></textarea>
+                <div class="form-item column1">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+            </fieldset>
+            <div class="submit">
+            <button type="submit" class="submit-button">Submit Request</button>
+            </div>
+        </form>
+        <section class="employee">
+            <h2>Meet our River Guides</h2>
+            <div class="image-grid">
+                <figure>
+                    <img src="images/corrine-employee.jpg" alt="Corrine, Junior Raft Guide">
+                    <figcaption>Corrine | Junior Raft Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/silas-employee-copy.jpg" alt="Silas, Head Raft Guide">
+                    <figcaption>Silas | Head Raft Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/afton-employee.jpg" alt="Afton, Senior Raft Guide">
+                    <figcaption>Afton | Senior Raft Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/robert-employee.jpg" alt="Robert, Junior Raft Guide">
+                    <figcaption>Robert | Junior Raft Guide</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="company-information">
+            <h3>Contact Us</h3>
+            <p class="address">1415 Rocky River Way<br>
+            Buena Vista, CO 80498</p>
+            <p class="phone-number">(719) 222-3333</p>
+            <p class="email">rmrafting@gmail.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6970.478694175241!2d-106.15269421177703!3d38.87940964771103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBuena%20Vista%20river%20rafting!5e0!3m2!1sen!2sus!4v1716410541985!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 | Rocky Mountain Rafting | Kayla Lange</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+    </div>
+</body>
+</html>
