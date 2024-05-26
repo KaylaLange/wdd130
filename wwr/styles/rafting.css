@@ -4,7 +4,7 @@
     --primary-color: #025959;
     --secondary-color: #393939;
     --accent1-color: #F2EDDF;
-    --accent2-color: #F27D72;
+    --accent2-color: #F1C12B;
 
     --heading-font: 'bakbak one', sans-serif;
     --paragraph-font: 'raleway', sans-serif;
@@ -12,7 +12,7 @@
     --nav-background-color: #f2eddf;
     --nav-link-color: #025959;
     --nav-hover-link-color: #F2EDDF;
-    --nav-hover-background-color: #038C7F;
+    --nav-hover-background-color: #039f8f;
 }
 
 .container {
@@ -47,7 +47,7 @@ header {
 }
 
 .navigation a:hover {
-    color: var(--accent2-color)
+    color: var(--nav-hover-background-color)
 }
 
 .logo {
@@ -118,6 +118,64 @@ body {
     top: 40%;
     padding: 2px;
     right: 330px;
+}
+
+.book {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+.contact button[type='submit'] {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    width: 200px;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+    padding-bottom: 3rem;
+}
+
+.explore {
+    display: block;
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 0;
+}
+
+.half, .full, .two-day, .teambuilding {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    color: var(--secondary-color);
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+.book-now button[type='submit'] {
+    margin: .5rem auto 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem .75rem;
+    font-size: 1rem;
 }
 
 .history-text {
@@ -219,7 +277,7 @@ footer {
 }
 
 .wireframe img {
-    padding-left: 22rem;
+    padding-left: 21rem;
     width: auto;
     height: 50px;
     text-decoration: none;
@@ -322,4 +380,32 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+table {
+    width: 80%;
+    margin-left: 10%;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+thead {
+    background-color: var(--nav-link-color);
+    color: #eee;
+}
+
+th, td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: #eee;
 }
