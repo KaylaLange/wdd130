@@ -15,10 +15,16 @@
     --nav-hover-background-color: #039f8f;
 }
 
-.container {
+/* .container {
     width: 100%;
     margin: 0 auto;
     padding-left: 29%;
+} */
+
+.container {
+    width: 100%;
+    margin: auto;
+    /* padding-left: 29%; */
 }
 
 header {
