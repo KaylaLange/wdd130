@@ -64,6 +64,148 @@ body {
     margin: 0;
 }
 
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    max-width: 960px;
+    padding: 0;   
+}
+
+p {
+    color: #393939;
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+    margin-top: 35px;
+}
+
+.sociallinks {
+    display: flex;
+    margin-left: auto;
+}
+
+.sociallinks a {
+    margin-left: 10px;
+    width: 50px;
+    height: auto;
+    text-decoration: none;
+}
+
+/* Index Page Specific CSS */
+
+.company-name-home {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    color: var(--accent1-color)
+    
+}
+
+.trips-btn {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 4.5rem;
+}
+
+span { 
+    display: inline-block;
+    background-color: var(--accent2-color);
+    padding: .75rem 0 .75rem 0;
+    border-radius: .5rem;
+    width: 500px;
+    margin-top: 2rem;
+}
+
+.know h2 {
+    text-align: center;
+}
+
+.know {
+    border-right: 1px solid
+}
+
+.know-image-grid {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1;
+    text-align: center;
+}
+
+.trip-link, .about-link, .contact-link, .contact-link-help {
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.trip-link:hover, .about-link:hover, .contact-link:hover, .contact-link-help:hover    {
+    color: var(--nav-hover-background-color);
+}
+
+.figure-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 3rem;
+}
+
+.newsletter h2 {
+    text-align: center;
+    padding-bottom: .85rem;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.newsletter-form {
+    border: 1px solid lightslategray;
+    border-radius: 0.5rem;
+    background-color:#eee;
+    display: grid;
+    width: 85%;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.form-info {
+    display: grid;
+    margin: 1rem;
+    border: 1px solid lightslategray;
+    padding: 1rem;
+}
+
+#firstname, #lastname {
+    margin-left: 1rem;
+}
+
+#email {
+    margin-left: 3.4rem;
+}
+
+.newsletter-firstname {
+    padding-bottom: 1rem;
+}
+
+.newsletter-email {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* About Page Specific CSS */
+
 .company-name {
     position: absolute;
     top: 10%;
@@ -109,16 +251,68 @@ body {
     width: 200px
 }
 
-.happy-block-overlay p {
+.happy-block-overlay h3 {
     position: absolute;
+    font-family: var(--paragraph-font);
+    font-weight: 500;
+    border: none;
     color: #F2EDDF;
     float: left;
-    width: 500px;
+    width: 600px;
     height: auto;
-    top: 40%;
+    top: 28%;
     padding: 2px;
-    right: 330px;
+    right: 280px;
 }
+
+.history-text {
+    padding-top: 2rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+    padding-bottom: 2rem;
+}
+
+.history img {
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    grid-row: 2;
+}
+
+.history p {
+    margin: 10px;
+    grid-row: 2;
+    width: 300px;
+}
+
+.adventure {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.adventure h2 {
+    display: block;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+/* Trips Page Specific CSS */
 
 .book {
     position: absolute;
@@ -169,13 +363,6 @@ body {
    padding-top: 3rem;
 }
 
-.explore {
-    display: block;
-    text-align: center;
-    padding-top: 4rem;
-    margin-bottom: 0;
-}
-
 .half, .full, .two-day, .teambuilding {
     font-family: var(--paragraph-font);
     font-size: 1rem;
@@ -207,59 +394,6 @@ body {
     font-size: 1rem;
 }
 
-.history-text {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 0;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-}
-
-.history img {
-    width: auto;
-    height: 160px;
-    margin: 10px;
-}
-
-.history p {
-    margin: 10px;
-}
-
-h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    max-width: 960px;
-    padding: 0;   
-}
-
-p {
-    color: #393939;
-}
-
-.adventure {
-    text-align: center;
-    margin-top: 25px;
-    padding: 10px;
-}
-
-.adventure h2 {
-    display: block;
-    padding-bottom: 1rem;
-    margin-bottom: 0;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-items: center;
-    grid-gap: 10px;
-}
-
 figure {
     width: 150px;
 }
@@ -282,37 +416,45 @@ figcaption {
     text-align: center;
 }
 
-footer {
-    display: flex;
-    padding: 10px;
-    background-color: var(--nav-background-color);
-    margin-top: 35px;
+table {
+    width: 80%;
+    margin-left: 9%;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
 }
 
-.sociallinks {
-    display: flex;
-    margin-left: auto;
+thead {
+    background-color: var(--nav-link-color);
+    color: #eee;
 }
 
-.sociallinks a {
-    margin-left: 10px;
-    width: 50px;
-    height: auto;
-    text-decoration: none;
+th, td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
 }
 
- .wireframe {
-    display: flex;
+td:last-of-type {
+    text-align: center;
 }
 
-.wireframe img {
-    padding-left: 21rem;
-    width: auto;
-    height: 50px;
-    text-decoration: none;
+tbody > tr:nth-of-type(even) {
+    background-color: #eee;
 }
 
-form {
+/* Contact Page Specific CSS */
+
+.help {
+    text-align: center;
+    padding-top: .5rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.request-form {
     width: 650px;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -322,7 +464,7 @@ form {
     display: grid;
 }
 
-fieldset {
+.contact-info, .questions {
     display: grid;
     grid-gap: .5rem;
     margin: 1rem;
@@ -372,7 +514,7 @@ button[type='submit'] {
     background-color: var(--accent2-color);
 }
 
-input[type='text'] {
+#fullname {
     margin-left: 1rem;
 }
 
@@ -383,13 +525,6 @@ input[type='email'] {
 h3 {
     border-bottom: 1px solid var(--secondary-color);
     padding-top: .5rem;
-}
-
-.help {
-    text-align: center;
-    padding-top: .5rem;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 .employee h2 {
@@ -411,31 +546,13 @@ h3 {
     height: 100%;
 }
 
-table {
-    width: 80%;
-    margin-left: 9%;
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: var(--paragraph-font);
-    font-size: 1rem;
-    letter-spacing: 1px;
-    margin-bottom: 100px;
+.wireframe {
+    display: flex;
 }
 
-thead {
-    background-color: var(--nav-link-color);
-    color: #eee;
-}
-
-th, td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-}
-
-td:last-of-type {
-    text-align: center;
-}
-
-tbody > tr:nth-of-type(even) {
-    background-color: #eee;
+.wireframe img {
+    padding-left: 21rem;
+    width: auto;
+    height: 50px;
+    text-decoration: none;
 }
